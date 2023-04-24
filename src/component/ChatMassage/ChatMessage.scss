@@ -1,0 +1,22 @@
+.chat-item {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  .message-time {
+    right: 2px;
+    bottom: 0px;
+  }
+
+  &.dark {
+    background-color: rgb(211, 219, 219);
+    max-width: 40rem;
+    border-radius: 20px 20px 0px 20px;
+  }
+
+  &.light {
+    background-color: rgb(187, 220, 187);
+    max-width: 40rem;
+    border-radius: 20px 20px 20px 0px;
+  }
+}
+.bot-image {
+  left: 1rem;
+}

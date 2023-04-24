@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .chat-message-box{
+    width:100%
+  }
+  .chat-message-container {
+    height: 80vh;
+    background: rgb(128, 134, 139);
+    overflow: auto;
+  }
+  .chat-message{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+  }
+  
+  .chat-input-container {
+    width: 100%;
+    display: flex;
+  }
+  .chat-input{
+    width: 100%;
+  }

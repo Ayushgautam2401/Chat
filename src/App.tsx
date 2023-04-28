@@ -45,7 +45,7 @@ function App() {
       </div>
       <div className="chat-input-container flex width-100 flex-align-center flex-justify-center">
         <ChatInput handleSendMessage={handleSendMessage} />
-        <Button>Clear Chat</Button>
+        {/* <Button>Clear Chat</Button> */}
       </div>
     </div>
   );

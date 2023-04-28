@@ -21,7 +21,7 @@ function ChatMessage(props: ChatProps) {
         </span>
       </div>
       <div className="flex flex-column flex-justify-end padding-l-2">
-        {isBotMessage && <img src="logo192.png"className={classNames(["border-radius-50"])}/> }
+        {/* {isBotMessage && <img src="logo192.png"className={classNames(["border-radius-50"])}/> } */}
         <img src="https://www.w3schools.com/howto/img_avatar.png" width="25px" height="25px" className={classNames(["border-radius-50", { "bot-image position-absolute": isBotMessage }])} alt=" " />
       </div>
     </div>

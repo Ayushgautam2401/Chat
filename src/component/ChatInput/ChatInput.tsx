@@ -1,4 +1,4 @@
-import { Button, Input, Icon } from "semantic-ui-react";
+import { Button, Input, Icon, TextArea } from "semantic-ui-react";
 import { useState } from "react";
 import "./ChatInput.scss";
 
@@ -40,7 +40,7 @@ function ChatInput({ handleSendMessage }: any) {
       formData.append('file', selectedFile);
 
       try {
-        const response = await fetch('http://localhost:5000/upload', {
+        const response = await fetch('http://3.8.72.214:5000/upload', {
           method: 'post',
           body: formData
         });
@@ -60,18 +60,17 @@ function ChatInput({ handleSendMessage }: any) {
         <Input type="file" onChange={handleFileInput} />
         <Button onClick={handleUpload}>Upload</Button>
       </div>
-      <Input
+      <TextArea
         size="large"
         value={value}
         placeholder="Send a message..."
         onKeyPress={handleInput}
         onChange={handleChange}
-        action={
-          <Button icon onClick={handleClick}>
+        rows={2}
+      />
+      <Button icon onClick={handleClick}>
             <Icon name="send" />
           </Button>
-        }
-      />
       {/* <div><Button onClick={set}>Clear Chat</Button></div> */}
     </div>
   );
